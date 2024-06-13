@@ -5,3 +5,9 @@ databaseChangeLog:
       file: db/changelog/db.create_brand_table-0.1.sql
   - include:
       file: db/changelog/db.create_car_model_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_body_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_fuel_type_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_engine_size_table-0.1.sql
