@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/db.create_user_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_brand_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_car_model_table-0.1.sql
