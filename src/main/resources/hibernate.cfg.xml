@@ -13,6 +13,19 @@
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
-
+    <mapping class="ru.samkad.carsalesproject.entity.Body"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Brand"/>
+    <mapping class="ru.samkad.carsalesproject.entity.CarModel"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Category"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Color"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Engine"/>
+    <mapping class="ru.samkad.carsalesproject.entity.EngineSize"/>
+    <mapping class="ru.samkad.carsalesproject.entity.FuelType"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Transmission"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Image"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Car"/>
+    <mapping class="ru.samkad.carsalesproject.entity.PriceHistory"/>
+    <mapping class="ru.samkad.carsalesproject.entity.Post"/>
+    <mapping class="ru.samkad.carsalesproject.entity.User"/>
   </session-factory>
 </hibernate-configuration>
