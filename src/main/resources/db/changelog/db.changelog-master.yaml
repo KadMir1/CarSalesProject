@@ -27,3 +27,24 @@ databaseChangeLog:
       file: db/changelog/db.create_post_table-0.1.sql
   - include:
       file: db/changelog/db.create_price_history_table-0.1.sql
+  - include:
+      file: db/changelog/insert_brands.sql
+  - include:
+      file: db/changelog/insert_models_cars.sql
+  - include:
+      file: db/changelog/insert_bodies.sql
+  - include:
+      file: db/changelog/insert_fuel_types.sql
+  - include:
+      file: db/changelog/insert_engine_sizes.sql
+  - include:
+      file: db/changelog/insert_transmissions.sql
+  - include:
+      file: db/changelog/insert_colors.sql
+  - include:
+      file: db/changelog/insert_categories.sql
+  - include:
+      file: db/changelog/insert_images.sql
+
+
+
