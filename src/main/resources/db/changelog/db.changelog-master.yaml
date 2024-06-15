@@ -11,3 +11,19 @@ databaseChangeLog:
       file: db/changelog/db.create_fuel_type_table-0.1.sql
   - include:
       file: db/changelog/db.create_engine_size_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_engine_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_transmission_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_color_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_category_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_car_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_image_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_post_table-0.1.sql
+  - include:
+      file: db/changelog/db.create_price_history_table-0.1.sql
