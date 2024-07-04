@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class HibernateConfig {
+
     @Bean(destroyMethod = "close")
     public SessionFactory getSessionFactory() {
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()

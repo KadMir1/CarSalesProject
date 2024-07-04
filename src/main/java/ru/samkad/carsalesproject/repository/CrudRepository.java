@@ -1,5 +1,11 @@
 package ru.samkad.carsalesproject.repository;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 import jakarta.persistence.PersistenceException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -8,15 +14,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Function;
-
 @Repository
-@AllArgsConstructor
 @Slf4j
+@AllArgsConstructor
 public class CrudRepository {
 
     private final SessionFactory sessionFactory;
@@ -69,7 +69,9 @@ public class CrudRepository {
     }
 
     public <T> List<T> query(String query, Class<T> cl) {
-        Function<Session, List<T>> command = session -> session.createQuery(query, cl).list();
+        Function<Session, List<T>> command = session -> session
+                .createQuery(query, cl)
+                .list();
         return tx(command);
     }
 
